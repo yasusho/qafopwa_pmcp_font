@@ -10,5 +10,5 @@ SYの作ったペメセペフォントの置き場。フォント別にフォル
 - [TTF ファイル](./acil_lujot/acil_lujot.ttf)
 - [WOFF ファイル](./acil_lujot/acil_lujot.woff)
 
-###使用サンプル
+### 使用サンプル
 ![ad.png](https://github.com/yasusho/qafopwa_pmcp_font/blob/main/acil_lujot/examples/ad/ad.png)
