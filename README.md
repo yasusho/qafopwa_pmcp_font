@@ -12,3 +12,11 @@ SYの作ったペメセペフォントの置き場。フォント別にフォル
 
 ### 使用サンプル
 ![ad.png](https://github.com/yasusho/qafopwa_pmcp_font/blob/main/acil_lujot/examples/ad/ad.png)
+
+## xedixel
+
+見出し向きフォント。
+幅が狭く、幾何的な設計。
+
+- [TTF ファイル](./xedixel/xedixel.ttf)
+- [WOFF ファイル](./xedixel/xedixel.woff)
