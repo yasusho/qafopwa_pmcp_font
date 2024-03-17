@@ -1,6 +1,6 @@
 # qafopwa_pmcp_font
 SYの作ったペメセペフォントの置き場。フォント別にフォルダ分けされており、woffとttfが置かれている。
-- [試し打ちページ](./glyph.html)
+- [試し打ちページ](https://yasusho.github.io/qafopwa_pmcp_font/glyph.html))
 
 ## acil lujot
 
