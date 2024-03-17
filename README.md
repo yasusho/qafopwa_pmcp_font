@@ -20,3 +20,10 @@ SYの作ったペメセペフォントの置き場。フォント別にフォル
 
 - [TTF ファイル](./xedixel/xedixel.ttf)
 - [WOFF ファイル](./xedixel/xedixel.woff)
+
+## cutapijot
+
+めちゃくちゃ幾何学的設計。100分切りで作った。
+
+- [TTF ファイル](./cutapijot/cutapijot.ttf)
+- [WOFF ファイル](./cutapijot/cutapijot.woff)
