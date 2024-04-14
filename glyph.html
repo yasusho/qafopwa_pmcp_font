@@ -8,57 +8,57 @@
     <style>
         @font-face {
             font-family: 'acil_lujot';
-            src: url(acil_lujot/acil_lujot.woff);
+            src: url("acil_lujot/acil_lujot.woff");
         }
 
-        :lang(acil_lujot) {
+        :lang(x-acil-lujot) {
             font-family: 'acil_lujot';
         }
 
         @font-face {
             font-family: 'xedixel';
-            src: url(xedixel/xedixel.woff);
+            src: url("xedixel/xedixel.woff");
         }
 
-        :lang(xedixel) {
+        :lang(x-xedixel) {
             font-family: 'xedixel';
         }
 
         @font-face {
             font-family: 'cutapijot';
-            src: url(cutapijot/cutapijot.woff);
+            src: url("cutapijot/cutapijot.woff");
         }
 
-        :lang(cutapijot) {
+        :lang(x-cutapijot) {
             font-family: 'cutapijot';
         }
     </style>
 </head>
 
 <body>
-    <p id="view0" lang="acil_lujot"><span style="font-size: 48px;">PBM CSXZ TDNL KGHAEUIO 1234567890.,!?-"()/</span></p>
+    <p id="view0" lang="x-acil-lujot"><span style="font-size: 48px;">PBM CSXZ TDNL KGHAEUIO 1234567890.,!?-"()/</span></p>
     </div>
     <details style="margin: 30px auto;" open>
         <summary><b>書体見本</b></summary>
-        <p id="view1" lang="acil_lujot"><span style="font-size: 12px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view1" lang="x-acil-lujot"><span style="font-size: 12px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view2" lang="acil_lujot"><span style="font-size: 16px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view2" lang="x-acil-lujot"><span style="font-size: 16px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view3" lang="acil_lujot"><span style="font-size: 20px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view3" lang="x-acil-lujot"><span style="font-size: 20px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view4" lang="acil_lujot"><span style="font-size: 28px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view4" lang="x-acil-lujot"><span style="font-size: 28px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view5" lang="acil_lujot"><span style="font-size: 32px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view5" lang="x-acil-lujot"><span style="font-size: 32px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view6" lang="acil_lujot"><span style="font-size: 40px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view6" lang="x-acil-lujot"><span style="font-size: 40px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
-        <p id="view7" lang="acil_lujot"><span style="font-size: 48px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
+        <p id="view7" lang="x-acil-lujot"><span style="font-size: 48px;">MUGAXIJU E BELPIC? MAK-MAK DOKTIT NUWAXECLETI
                 "ZO". HATA,
                 SETIJA! 1234567890</span></p>
     </details>
@@ -74,7 +74,7 @@
                 style="font-size: 32px; width: 80%;">
         </div>
         <div>
-            <p id="output" lang="acil_lujot" style="font-size: 48px; min-height: 1em;">LUCUCLETI E PANKA PI AUC E
+            <p id="output" lang="x-acil-lujot" style="font-size: 48px; min-height: 1em;">LUCUCLETI E PANKA PI AUC E
                 PANKA</p>
         </div>
     </div>
@@ -86,9 +86,14 @@
         const font_select = document.getElementById('font_select');
 
         font_select.addEventListener('change', (e) => {
-            output.lang = e.target.value;
+            const valid_lang_name = {
+                    "acil_lujot": "x-acil-lujot",
+                    "xedixel": "x-xedixel",
+                    "cutapijot": "x-cutapijot"
+                }[e.target.value];
+            output.lang = valid_lang_name;
             for (let i = 0; i < 8; i++) {
-                document.getElementById(`view${i}`).lang = e.target.value;
+                document.getElementById(`view${i}`).lang = valid_lang_name;
             }
         });
     </script>
