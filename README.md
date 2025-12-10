@@ -28,3 +28,10 @@ SYの作ったペメセペフォントの置き場。フォント別にフォル
 
 - [TTF ファイル](./cutapijot/cutapijot.ttf)
 - [WOFF ファイル](./cutapijot/cutapijot.woff)
+
+## acil air
+
+アイル語の新聞などでの表記を目指したフォント。立体イタリック。
+
+- [TTF ファイル](./acil_lujot/acil_air.ttf)
+- [WOFF ファイル](./acil_lujot/acil_air.woff)
