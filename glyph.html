@@ -32,6 +32,16 @@
         :lang(x-cutapijot) {
             font-family: 'cutapijot';
         }
+
+                @font-face {
+            font-family: 'acil_air';
+            src: url("acil_lujot/acil_air.woff");
+        }
+
+        :lang(x-acil-air) {
+            font-family: 'acil_air';
+        }
+
     </style>
 </head>
 
@@ -69,6 +79,7 @@
                 <option>acil_lujot</option>
                 <option>xedixel</option>
                 <option>cutapijot</option>
+                <option>acil_air</option>
             </select>
             <input id="input" type="text" placeholder="LUCUCLETI E PANKA PI AUC E PANKA" maxlength="50"
                 style="font-size: 32px; width: 80%;">
@@ -89,7 +100,8 @@
             const valid_lang_name = {
                     "acil_lujot": "x-acil-lujot",
                     "xedixel": "x-xedixel",
-                    "cutapijot": "x-cutapijot"
+                    "cutapijot": "x-cutapijot",
+                    "acil_air": "x-acil-air"
                 }[e.target.value];
             output.lang = valid_lang_name;
             for (let i = 0; i < 8; i++) {
